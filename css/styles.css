@@ -225,3 +225,25 @@ nav a {
 .copyright {
     text-align: center;
 }
+
+/* ================================= 
+  Services Page Styles
+==================================== */
+
+.services-grid {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.service-card {
+    width: 300px;
+    border: 1px solid gray;
+    margin-bottom: 40px;
+}
+
+.service-card img {
+    width: 300px;
+}
