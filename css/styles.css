@@ -1,0 +1,227 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #ff7f61;
+    --dark-blue: #2c4068;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 25px 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--dark-blue);
+    font-weight: 800;
+
+}
+
+p {
+    line-height: 1.4rem;
+}
+
+a {
+    color: var(--orange);
+}
+
+a:hover {
+    color: var(--dark-blue);
+}
+
+.button {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    box-shadow: 3px 5px 3px 2px #bbb;
+    transition: background-color .4s ease-in;
+}
+
+.button:hover {
+    background-color: var(--dark-blue);
+}
+
+hr {
+    border: 2px solid var(--orange);
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer hr {
+    border: 5px solid var(--dark-blue);
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* ================================= 
+  Layout Styles
+==================================== */
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name h1,
+.site-name p {
+    margin: 0;
+}
+
+#logo {
+    height: 80px;
+    margin-right: 20px;
+}
+
+nav a {
+    padding: 5px 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#hero-img {
+    width: 60%;
+    margin-right: 10px;
+}
+
+#welcome {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#welcome p:last-of-type {
+    margin-bottom: 30px;
+}
+
+#experience {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#experience img {
+    border-radius: 50%;
+    height: 325px;
+}
+
+#experience div {
+    max-width: 55%;
+}
+
+#testimonials {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.testimonial-grid {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-card {
+    color: #fff;
+    max-width: 300px;
+    height: 375px;
+    padding: 20px;
+    margin: auto 20px;
+}
+
+.testimonial-card p {
+    width: 75%;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.testimonial-card img {
+    width: 35px;
+    margin-top: 50px;
+}
+
+.testimonial-grid>.testimonial-card:nth-of-type(odd) {
+    background-color: var(--orange);
+}
+
+.testimonial-grid>.testimonial-card:nth-of-type(even) {
+    background-color: var(--dark-blue);
+}
+
+.testimonial-grid>.testimonial-card:nth-of-type(even) h3 {
+    color: var(--orange);
+}
+
+.footer-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+.footer-card p {
+    margin: 5px auto;
+}
+
+.footer-card a {
+    text-decoration: none;
+}
+
+.footer-card p:nth-of-type(even){
+    margin-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
