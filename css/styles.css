@@ -280,3 +280,29 @@ nav a {
     color: var(--orange);
     margin: 3px auto 0 auto;
 }
+
+/* ================================= 
+  Contact Page Styles
+==================================== */
+
+#contact-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 0;
+}
+
+#contact-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
