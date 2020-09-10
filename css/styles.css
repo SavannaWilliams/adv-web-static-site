@@ -181,7 +181,7 @@ nav a {
 
 .testimonial-card {
     color: #fff;
-    max-width: 300px;
+    width: 300px;
     height: 375px;
     padding: 20px;
     margin: auto 20px;
@@ -258,7 +258,6 @@ nav a {
     align-items: flex-start;
     text-align: center;
     margin: 0 auto 40px auto;
-
 }
 
 .service-card {
@@ -268,6 +267,7 @@ nav a {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
+    margin: 0 auto;
     margin-bottom: 60px;
 }
 
@@ -279,6 +279,7 @@ nav a {
     margin: 0 auto 30px auto;
     width: 30%;
 }
+
 .service-prices p {
     margin-bottom: 0px;
 }
@@ -338,3 +339,69 @@ input[type=text] {
     padding: 15px;
 }
 
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* == Tablet media query == */
+@media only screen and (max-width: 768px) {
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+
+    .site-name {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    #logo {
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    #welcome,
+    #experience,
+    .testimonial-grid {
+        flex-flow: column nowrap;
+    }
+
+    .testimonial-card {
+        margin-bottom: 20px;
+        width: 80%;
+        height: 300px;
+    }
+
+    .services-grid {
+        margin: 0 auto 20px auto;
+    }
+
+    .service-card {
+        width: 275px;
+        height: 400px;
+        margin-bottom: 60px;
+    }
+
+    .service-card img {
+        width: 275px;
+    }
+
+    .service-button {
+        width: 60%;
+        font-size: 1.4rem;
+
+    }
+}
+
+/* == Mobile phone media query == */
+@media only screen and (max-width: 425px) {
+
+}
