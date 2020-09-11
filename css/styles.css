@@ -356,9 +356,7 @@ input[type=text] {
     }
 
     .site-name {
-        display: flex;
         flex-flow: column nowrap;
-        justify-content: space-between;
         align-items: center;
         text-align: center;
     }
@@ -374,12 +372,17 @@ input[type=text] {
         flex-flow: column nowrap;
     }
 
+    #testimonials {
+        margin-bottom: 50px;
+    }
+
     .testimonial-card {
         margin-bottom: 20px;
-        width: 80%;
+        width: 70%;
         height: 300px;
     }
 
+    /* Services page */
     .services-grid {
         margin: 0 auto 20px auto;
     }
@@ -404,4 +407,60 @@ input[type=text] {
 /* == Mobile phone media query == */
 @media only screen and (max-width: 425px) {
 
+    header {
+        flex-flow: column nowrap;
+    }
+
+    .site-name h1 {
+        margin-bottom: 5px;
+    }
+    
+    .site-name {
+        margin-bottom: 20px;
+    }
+
+    #experience img {
+        height: 225px;
+    }
+
+    #experience div {
+        max-width: 70%;
+    }
+
+    .testimonial-card {
+        width: 90%;
+        height: 350px;
+    }
+
+    .footer-info {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .footer-card {
+        margin-bottom: 30px;
+    }
+
+    .footer-card h2 {
+        margin-top: 0;
+    }
+
+    /* Services page */
+    .services-intro {
+        width: 70%;
+    }
+
+    .input-group {
+        flex-flow: column nowrap;
+    }
+
+    /* Contact page */
+    input[type=text] {
+        width: 100%;
+        margin: 12px auto 18px auto;
+    }
+
+    #contact-form .button {
+        font-size: 1.2rem;
+    }
 }
